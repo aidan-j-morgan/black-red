@@ -413,6 +413,43 @@ province_event = {
 				}
 			}
 		}
+		modifier = { # Make conversion slower if it's just via the fist/anarchist route
+			factor = 2
+			NOT = {
+				primary_title = {
+					conquest_culture = PREV
+				}
+				ROOT = {
+					county = {
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					duchy = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					kingdom = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+				ROOT = {
+					empire = {
+						holder_scope = {
+							character = PREVPREVPREV
+						}
+						conquest_culture = PREVPREV
+					}
+				}
+			}
+		}
 	}
 
 	option = {

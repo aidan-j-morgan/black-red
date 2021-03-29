@@ -17,6 +17,7 @@ communal_elective;Communal Election;;;;;;;;;x
 ##### Voting
 ####### Vote strength
 tooltip_dotp_vote_strength_marx_cult;[Root.GetFirstName] is General Secretary;;;;;;;;;x
+tooltip_dotp_vote_strength_school_sickle;[Root.GetFirstName] follows the School of the Sickle;;;;;;;;;x
 tooltip_dotp_vote_strength_ruler_diplomacy;[Root.GetFirstName] is an able diplomat;;;;;;;;;x
 tooltip_dotp_vote_strength_ruler_martial;[Root.GetFirstName] is a skillful general;;;;;;;;;x
 tooltip_dotp_vote_strength_ruler_stewardship;[Root.GetFirstName] is a shrewd administrator;;;;;;;;;x

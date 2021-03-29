@@ -3599,6 +3599,14 @@ dotp_elective = {
 			has_landed_title = d_marx_cult
 		}
 		
+		additive_modifier = { # School of the Sickle rulers have more influence
+			value = 5
+			localisation_key = tooltip_dotp_vote_strength_school_sickle
+			FROMFROM = {
+				holder_scope = { character = ROOT }
+			}
+		}
+		
 		additive_modifier = { # Ruler has high diplomacy
 			value = 5
 			localisation_key = tooltip_dotp_vote_strength_ruler_diplomacy
@@ -3966,7 +3974,7 @@ dotp_elective = {
 	}
 	
 	elector_selection = {
-		max_amount = 8 # Depending on council laws this is either the whole council plus the ruler or the council and liege + gensec
+		max_amount = 9 # Just enough to accommodate the entire council of a realm with full council authority plus one for the regent, liege, or general secretary
 		days = -5 		
 		additive_modifier = { # Ruler always gets a vote
 			value = 50
@@ -3985,6 +3993,7 @@ dotp_elective = {
 				has_job_title = job_spiritual
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor
+				has_minor_title = title_appointed_regent
 			}
 		}
 		additive_modifier = { #Then the liege

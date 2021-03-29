@@ -163,7 +163,10 @@ character_event = {
 	trigger = {
 		religion = anarchist
 		AND = {
-			is_feudal = yes
+			OR = {
+				is_feudal = yes
+				is_theocracy = yes
+			}
 			NOT = { government = communal_government }
 		}
 	}
