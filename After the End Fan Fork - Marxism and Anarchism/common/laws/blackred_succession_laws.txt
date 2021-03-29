@@ -1,0 +1,60 @@
+succession_laws = {
+	succ_communal_elective = {
+		oldest_child_opinion = -5
+		child_opinion = -5
+		dynasty_opinion = -5
+		feudal_opinion = 5
+		potential = {
+			holder_scope = {
+				OR = {
+					government = communal_government
+					government = dotp_government
+				}
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = communal_elective
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	succ_dotp_elective = {
+		oldest_child_opinion = -5
+		child_opinion = -5
+		dynasty_opinion = -5
+		feudal_opinion = 5
+		potential = {
+			holder_scope = { government = dotp_government }
+		}
+		allow = {
+			custom_tooltip = {
+				text = not_forced_tt
+				hidden_tooltip = {
+					holder_scope = { NOT = { has_character_flag = liege_forced_succ_law } }
+				}
+			}
+		}
+		effect = {
+			succession = {
+				base_type = feudal_elective
+				voting_rules = dotp_elective
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}			
+	}
+}

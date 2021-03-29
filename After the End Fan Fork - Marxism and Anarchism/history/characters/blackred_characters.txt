@@ -1,0 +1,63 @@
+###ÄNSI
+
+# This is really more of an easter egg than anything else.
+# These characters have no plot significance. I just thought it would be cute.
+
+9999998={
+	name="Aidan"
+	female=no
+	dynasty=9999999
+	disallow_random_traits=yes
+	dna="bdahdribfck"
+	properties="an0gbl"
+	culture=cajun
+	religion=marxist
+	trait=scholarly_theologian
+	trait=quick
+	trait=gardener
+	trait=patient
+	trait=slothful
+	trait=erudite
+	trait=reclusive
+	trait=stressed
+	trait=school_fist
+	trait=heresiarch
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	2641.2.22={birth=yes}
+	2665.1.1={ 
+		add_spouse=9999999
+		effect={add_lover=9999999}
+		effect={add_friend=9999999}
+		effect={culture=rostmann}
+	}
+}
+
+9999999={
+	name="Allison"
+	female=yes
+	dna="abbhicjcaak"
+	properties="vm0gkk"
+	disallow_random_traits=yes
+	culture=hawaiian
+	religion=marxist
+	trait=fortune_builder
+	trait=architect
+	trait=quick
+	trait=chaste
+	trait=diligent
+	trait=musician
+	trait=proud
+	trait=stubborn
+	trait=school_fist
+	diplomacy = 5
+	martial = 5
+	stewardship = 5
+	intrigue = 5
+	learning = 5
+	2640.7.10={birth=yes}
+	2665.1.1={effect={culture=rostmann}
+}

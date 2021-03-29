@@ -1,0 +1,111 @@
+feudal_governments = {
+	dotp_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments = { # Accepts other, non-colonial republics
+			republic_government
+		}
+		allowed_holdings_religion = { # You can rule tribal communists just fine
+			TRIBAL
+		}
+		free_revoke_on_governments = { # Free revokes on all other feudal types and merchant republics
+			feudal_government
+			theocratic_feudal_government
+			imperial_government
+			bureaucratic_government
+			mormon_government
+			communal_governmentz
+			merchant_republic_government
+		}
+		free_revoke_on_tiers = { # Delegates can be recalled
+			king
+			duke
+		}
+		frame_suffix = "_republic"
+		title_prefix = "dotp_"
+		potential = {
+			religion = marxist
+		}
+		
+		color = { 175 40 40 }
+		
+		uses_bride_price = yes
+		free_retract_vassalage = yes
+		uses_piety_for_law_change = yes
+		
+		dukes_called_kings = yes
+		barons_need_dynasty = no
+		allows_matrilineal_marriage = yes
+		ignores_de_jure_laws = yes
+
+		can_build_tribal = no
+		
+		capital_move_delay = 600
+	}
+	
+	communal_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CASTLE
+			CITY
+			TEMPLE
+			FORT
+			HOSPITAL
+		}
+		allowed_holdings_religion = { # You can rule tribal communists just fine
+			TRIBAL
+		}
+		vassal_call_to_arms = { # Calls other communal societies to arms
+			communal_government
+			dotp_government
+			republic_government
+			tribal_government
+		}
+		free_revoke_on_governments = { # Free revokes on all other feudal types and merchant republics
+			feudal_government
+			theocratic_feudal_government
+			imperial_government
+			bureaucratic_government
+			mormon_government
+			dotp_government
+			merchant_republic_government
+		}
+		no_vassal_tax = {
+			communal_government
+			dotp_government
+			republic_government
+			tribal_government
+		}
+		frame_suffix = "_republic"
+		title_prefix = "communal_"
+		potential = {
+			religion = anarchist
+			
+			NAND = {
+				controls_religion = yes
+				religion = marxist
+			}
+		}
+		
+		color = { 100 100 100 }
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		uses_bride_price = yes
+		uses_piety_for_law_change = yes
+		
+		dukes_called_kings = yes
+		barons_need_dynasty = no
+		allows_matrilineal_marriage = yes
+		ignores_de_jure_laws = yes
+
+		can_build_tribal = no
+		
+		capital_move_delay = 600
+	}
+}

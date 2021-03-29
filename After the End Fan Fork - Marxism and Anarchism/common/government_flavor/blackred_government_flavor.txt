@@ -1,0 +1,34 @@
+government_flavor = {
+	name = gov_dotp
+	graphics = GFX_evt_peasants
+	priority = 5
+	trigger = {
+		government = dotp_government
+		NOR = { 
+			has_law = succ_communal_elective 
+			has_law = succession_voting_power_1
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_dotp_rep
+	graphics = GFX_evt_peasants
+	priority = 5
+	trigger = {
+		government = dotp_government
+		OR = {
+			has_law = succ_communal_elective
+			has_law = succession_voting_power_1
+		}
+	}
+}
+
+government_flavor = {
+	name = gov_communal
+	graphics = GFX_evt_peasants
+	priority = 5
+	trigger = {
+		government = communal_government
+	}
+}

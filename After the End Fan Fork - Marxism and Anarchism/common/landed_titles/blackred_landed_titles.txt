@@ -1,0 +1,137 @@
+c_manhattan = {  # Many many many early communist parties got their starts here
+	holy_site = marxist
+	holy_site = anarchist
+}	
+
+c_chicago = {  # IWW, Haymarket, etc
+	holy_site = marxist
+	holy_site = anarchist
+}
+
+c_seattle = {  # Statue of Lenin and also CHAZ
+	holy_site = marxist
+	holy_site = anarchist
+}
+
+c_bogota = {  # Bolivarianism
+	holy_site = marxist
+	holy_site = anarchist
+}
+
+c_havana = {  # Cuba baby
+	holy_site = marxist
+}
+
+c_comitan = {  # Zapatistas
+	holy_site = anarchist
+}
+
+#### MERCS ####
+
+d_wobblies = {
+	color={ 163 16 16 }
+	
+	capital = 170  # Chicago
+
+	culture = chicagoan
+	religion = anarchist
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = red_guards_composition
+}
+
+d_zapatistas = {
+	color={ 163 16 16 }
+
+	capital = 1834
+	
+	culture = cholano
+	religion = anarchist
+
+	title = "SUB_COMMANDANTE"
+	foa = "SUB_COMMANDANTE_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = red_guards_composition
+}
+
+d_black_panthers = {
+	color={ 163 16 16 }
+
+	capital = 2032
+	
+	culture = bayfolk
+	religion = marxist
+
+	title = "CAPTAIN"
+	foa = "CAPTAIN_FOA"
+
+	mercenary = yes
+	landless = yes
+	primary = yes
+	independent = yes
+	strength_growth_per_century = 1.0
+
+	mercenary_type = red_guards_composition
+}
+
+####### OTHER
+
+d_marx_cult = {
+	color = { 175 40 40 }
+
+	capital = 63  # Washington
+	creation_requires_capital = no
+	
+	dignity = 100
+	
+	title = "MARX_CULT_HEAD"
+	title_female = "MARX_CULT_HEAD_FEMALE"
+	foa = "MARX_CULT_FOA"
+	
+	location_ruler_title = no
+	
+	religion = marxist
+	
+	controls_religion = marxist
+	
+	short_name = yes
+	
+	caliphate = yes
+
+	dynasty_title_names = no
+	
+}
+
+e_ussa = {
+
+	color={ 163 16 16 }
+	capital = 63  # Washington
+	creation_requires_capital = no
+	dynasty_title_names = no
+	short_name = yes
+	allow = {
+		OR = {
+			religion = marxist
+			religion = anarchist
+			FROM = {
+				any_previous_holder = {
+					always = yes
+				}
+			}
+		}
+	}
+}

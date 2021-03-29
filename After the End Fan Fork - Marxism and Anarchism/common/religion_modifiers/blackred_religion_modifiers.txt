@@ -1,0 +1,14 @@
+held_rally_effects = {
+	authority = 1
+	years = 1
+}
+
+formed_ussa = {
+	authority = 20
+	years = 100
+}
+
+international_solidarity = {
+	authority = 20
+	years = 100
+}

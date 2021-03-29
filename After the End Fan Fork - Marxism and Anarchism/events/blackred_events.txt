@@ -1,0 +1,402 @@
+namespace = blackred
+
+# Foundation of the USSA
+narrative_event = {
+	id = blackred.1
+	title = EVT_NAME_blackred.1
+	picture = GFX_evt_blackred
+	is_triggered_only = yes
+	major = yes
+	show_root = yes
+	
+	desc = {
+		trigger = { # Founder himself
+			has_character_flag = blackred_ussa_founder
+			text = EVT_DESC_A_blackred.1
+		}
+	}
+	desc = {
+		trigger = { # Leftists
+			OR = {
+				religion = marxist
+				religion = anarchist
+			}
+		}
+		text = EVT_DESC_B_blackred.1
+	}
+	desc = {
+		trigger = { # Everyone else
+			NOR = {
+				religion = marxist
+				religion = anarchist
+			}
+		}
+		text = EVT_DESC_C_blackred.1
+	}
+	
+	option = { # Leftists
+		name = EVT_OPT_A_blackred.1
+		trigger = {
+			OR = {
+				religion = marxist
+				religion = anarchist
+			}
+		}
+	}
+	
+	option = { # Everyone else
+		name = EVT_OPT_B_blackred.1
+		trigger = {
+			NOT = { religion = marxist }
+		}
+	}
+}
+
+# Foundation of the Party
+narrative_event = { 
+	id = blackred.2
+	title = EVT_NAME_blackred.2
+	picture = GFX_evt_blackred
+	is_triggered_only = yes
+	major = yes
+	show_root = yes
+
+	desc = { # The new General Secretary
+		trigger = { has_character_flag = blackred_party_founder }
+		text = EVT_DESC_A_blackred.2
+	}
+	desc = { # Other leftists
+		trigger = { 
+			AND = {
+				OR = {
+					religion = marxist
+					religion = anarchist
+				}
+				NOT = { has_character_flag = blackred_party_founder }
+			}
+		}
+		text = EVT_DESC_B_blackred.2
+	}
+	desc = { # Everyone else
+		trigger = {
+			NOR = { 
+				religion = marxist
+				religion = anarchist
+			}
+		}
+		text = EVT_DESC_C_blackred.2
+	}
+	
+	option = { # Marxists
+		name = EVT_OPT_A_blackred.2
+		trigger = { religion = marxist }
+	}
+	option = { # Anarchists
+		name = EVT_OPT_B_blackred.2
+		trigger = { religion = anarchist }
+	}
+	option = { # Everyone else
+		name = EVT_OPT_C_blackred.2
+		trigger = {
+			NOR = {
+				religion = marxist
+				religion = anarchist
+			}
+		}
+	}
+}
+
+# Assassins come
+character_event = {
+	id = blackred.3
+	title = EVT_NAME_blackred.3
+	desc = EVT_DESC_blackred.3
+	picture = GFX_evt_assassination
+	border = GFX_event_normal_frame_intrigue
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {has_character_flag = assassins_target_marked_for_death }
+	}
+	
+	option = { name = EVT_OPT_blackred.3 }
+	after = {
+		set_character_flag = assassins_target_marked_for_death
+		show_scope_change = no
+	}
+}
+
+# Marxist cleanup event
+character_event = {
+	id = blackred.96
+	desc = EVT_DESC_blackred.96
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		religion = marxist
+		AND = {
+			is_feudal = yes
+			NOT = { government = dotp_government }
+		}
+	}
+	
+	option = { 
+		name = EVT_OPT_blackred.96
+		hidden_tooltip = {
+			set_government_type = dotp_government
+		}
+	}
+}
+
+# Anarchist cleanup event
+character_event = {
+	id = blackred.97
+	desc = EVT_DESC_blackred.97
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		religion = anarchist
+		AND = {
+			is_feudal = yes
+			NOT = { government = communal_government }
+		}
+	}
+	
+	option = { 
+		name = EVT_OPT_blackred.97
+		hidden_tooltip = {
+			set_government_type = communal_government
+		}
+	
+	}
+}
+
+# Your ministers suggest gender reform
+character_event = {
+	id = blackred.98
+	desc = EVT_DESC_blackred.98
+	picture = GFX_evt_courtiers_talking
+	
+	only_playable = yes
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	trigger = {
+		is_adult = yes
+		OR = {
+			religion = marxist
+			religion = anarchist
+		}
+		primary_title = {
+			OR = {
+				has_law = status_of_women_0
+				has_law = status_of_women_1
+				has_law = status_of_women_2
+			}
+			temporary = no
+		}
+		NOT = { has_character_flag = blackred_refused_gender_reform }
+	}
+	
+	option = { # Embrace full status of women & launch education campaign
+		name = EVT_OPT_STAT4_blackred.98
+		primary_title = { add_law = status_of_women_4 }
+		primary_title = { add_law = true_cognatic_succession }
+		scaled_wealth = -1
+		add_character_modifier = {
+			modifier = reeducation_campaign_effect
+			years = 2
+		}
+		piety = 50
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 3 trait = just }
+			modifier = { factor = 3 trait = zealous }
+			modifier = { factor = 3 trait = kind }
+			modifier = { factor = 4 is_female = yes }
+		}
+	}
+	
+	option = { # Change the law but not public opinion
+		name = EVT_OPT_STAT3_blackred.98
+		primary_title = { add_law = status_of_women_3 }
+		primary_title = { add_law = true_cognatic_succession }
+		piety = 25
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 1.5 trait = just }
+			modifier = { factor = 1.5 trait = zealous }
+			modifier = { factor = 1.5 trait = kind }
+			modifier = { factor = 2 is_female = yes }
+		}
+	}
+	
+	option = { # Refuse
+		name = EVT_OPT_REFUSE_blackred.98
+		trigger = { is_female = no }
+		piety = -50
+		set_character_flag = blackred_refused_gender_reform
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = cynical }
+			modifier = { factor = 2 trait = cruel }
+		}
+	}
+}
+
+character_event = {
+	id = blackred.99
+	desc = EVT_DESC_blackred.99
+	picture = GFX_evt_blackred
+	is_triggered_only = yes
+	
+	# Options for staying the same
+	option = {
+		name = EVT_OPT_A1_blackred.99
+		trigger = { trait = school_hammer }
+	}
+	option = {
+		name = EVT_OPT_B1_blackred.99
+		trigger = { trait = school_sickle }
+	}
+	option = {
+		name = EVT_OPT_C1_blackred.99
+		trigger = { trait = school_book }
+	}
+	option = {
+		name = EVT_OPT_D1_blackred.99
+		trigger = { trait = school_fist }
+	}
+	
+	option = {
+		name = EVT_OPT_A2_blackred.99
+		trigger = {
+			NOT = { trait = school_hammer }
+		}
+		hidden_tooltip = {
+			remove_trait = school_hammer
+			remove_trait = school_sickle
+			remove_trait = school_book
+			remove_trait = school_fist
+		}
+		add_trait = school_hammer
+		set_character_flag = blackred_changed_marxist_branch
+		
+		ai_chance = { # School of the Hammer tends to the militant
+			factor = 10
+			modifier = { # Liege school should be a huge influence
+				factor = 20
+				liege = { trait = school_hammer }
+			}
+			modifier = { factor = 2 trait = tough_soldier }
+			modifier = { factor = 2 trait = skilled_tactician }
+			modifier = { factor = 2 trait = brilliant_strategist }
+			modifier = { factor = 5 trait = strategist }
+			modifier = { factor = 3 trait = brave }
+			modifier = { factor = 1.5 trait = zealous }
+			modifier = { factor = 1.5 trait = ambitious }
+			modifier = {factor = 0.5 trait = craven }
+		}
+	}
+	
+	option = {
+		name = EVT_OPT_B2_blackred.99
+		trigger = {
+			NOT = { trait = school_sickle }
+		}
+		hidden_tooltip = {
+			remove_trait = school_hammer
+			remove_trait = school_sickle
+			remove_trait = school_book
+			remove_trait = school_fist
+		}
+		add_trait = school_sickle
+		set_character_flag = blackred_changed_marxist_branch
+		
+		ai_chance = { School of the Sickle is intrigue-based
+			factor = 10
+			modifier = { # Liege school should be a huge influence
+				factor = 20
+				liege = { trait = school_sickle }
+			}
+			modifier = { factor = 2 trait = flamboyant_schemer }
+			modifier = { factor = 2 trait = intricate_webweaver }
+			modifier = { factor = 2 trait = elusive_shadow }
+			modifier = { factor = 5 trait = schemer }
+			modifier = { factor = 3 trait = paranoid }
+			modifier = { factor = 1.5 trait = cynical }
+			modifier = { factor = 1.5 trait = content }
+			modifier = { factor = 0.5 trait = brave }
+		}
+	}
+	
+	option = {
+		name = EVT_OPT_C2_blackred.99
+		trigger = {
+			NOT = { trait = school_book }
+		}
+		hidden_tooltip = {
+			remove_trait = school_hammer
+			remove_trait = school_sickle
+			remove_trait = school_book
+			remove_trait = school_fist
+		}
+		add_trait = school_book
+		set_character_flag = blackred_changed_marxist_branch
+		
+		ai_chance = { # School of the Book attracts scholars
+			factor = 10
+			modifier = { # Liege school should be a huge influence
+				factor = 20
+				liege = { trait = school_book }
+			}
+			modifier = { factor = 2 trait = martial_cleric }
+			modifier = { factor = 2 trait = scholarly_theologian }
+			modifier = { factor = 2 trait = mastermind_theologian }
+			modifier = { factor = 5 trait = scholar }
+			modifier = { factor = 3 trait = erudite }
+			modifier = { factor = 1.5 trait = proud }
+			modifier = { factor = 1.5 trait = stubborn }
+			modifier = { factor = 0.5 trait = arbitrary }
+		}
+	}
+	
+	option = {
+		name = EVT_OPT_D2_blackred.99
+		trigger = {
+			NOT = { trait = school_fist }
+		}
+		hidden_tooltip = {
+			remove_trait = school_hammer
+			remove_trait = school_sickle
+			remove_trait = school_book
+			remove_trait = school_fist
+		}
+		add_trait = school_fist
+		set_character_flag = blackred_changed_marxist_branch
+		
+		ai_chance = { # School of the Fist attracts diplomats
+			factor = 10
+			modifier = { # Liege school should be a huge influence
+				factor = 20
+				liege = { trait = school_fist }
+			}
+			modifier = { factor = 2 trait = underhanded_rogue }
+			modifier = { factor = 2 trait = charismatic_negotiator }
+			modifier = { factor = 2 trait = grey_eminence }
+			modifier = { factor = 5 trait = socializer }
+			modifier = { factor = 3 trait = patient }
+			modifier = { factor = 1.5 trait = gregarious }
+			modifier = { factor = 1.5 trait = just }
+			modifier = { factor = 0.5 trait = greedy }
+		}
+	}
+}

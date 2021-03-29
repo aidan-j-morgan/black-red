@@ -1,0 +1,9 @@
+###ÄNSI
+9999999 = { name="Adlach" culture=rostmann
+	coat_of_arms={
+				data={
+					0 0 0 20 0 7 0 
+				}
+				religion="marxist"
+	}
+}

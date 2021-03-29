@@ -1,0 +1,6 @@
+reeducation_campaign_effect = {
+	name = reeducation_campaign
+	monthly_character_piety = 0.2
+	global_revolt_risk = 0.02
+	icon = 5
+}

@@ -1,0 +1,132 @@
+school_hammer = {
+	opposites = {
+		school_sickle
+		school_book
+		school_fist
+	}
+	
+	opposite_opinion = -5
+	
+	martial = 1
+	stewardship = -1
+	command_modifier = {
+		light_infantry = 0.05
+		religious_enemy = 0.05
+	}
+	
+	ai_zeal = 10
+
+	potential = { religion = marxist }
+	religious_branch = marxist
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+	
+}
+
+school_sickle = {
+	opposites = {
+		school_hammer
+		school_book
+		school_fist
+	}
+
+	opposite_opinion = -5
+	
+	diplomacy = -1
+	intrigue = 1
+	global_revolt_risk = -0.01
+	
+	ai_rationality = 10
+
+	potential = { religion = marxist }
+	religious_branch = marxist
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+	
+}
+
+school_book = {
+	opposites = {
+		school_hammer
+		school_sickle
+		school_fist
+	}
+
+	opposite_opinion = -10
+
+	martial = -1
+	learning = 3
+	
+	ai_honor = 10
+
+	potential = { religion = marxist }
+	religious_branch = marxist
+	random = no
+	religious = yes
+	ruler_designer_cost = 0
+
+}
+
+school_fist = {
+	opposites = {
+		school_hammer
+		school_sickle
+		school_book
+	}
+
+	opposite_opinion = -5
+	
+	diplomacy = 1
+	culture_flex = -0.5
+	castle_vassal_tax_modifier = -0.1
+
+	potential = { religion = marxist }
+	religious_branch = marxist
+	random = no
+	religious = yes
+	ruler_designer_cost = 0	
+}
+
+hero_of_labor = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		shaddai
+		fords_striker
+		valhalla_bound
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		jaguar_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}

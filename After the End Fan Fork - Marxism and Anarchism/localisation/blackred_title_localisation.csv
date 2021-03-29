@@ -1,0 +1,111 @@
+#CODE;ENGLISH;;;;;;;;;x
+##### Landed Titles
+GENERAL_SECRETARY;General Secretary;;;;;;;;;x
+GENERAL_SECRETARY_FOA;Dear General Secretary;;;;;;;;;x
+e_ussa;United Socialist States of America;;;;;;;;;x
+e_ussa_adj;U.S.S.A;;;;;;;;;x
+MARX_CULT_HEAD;General Secretary;;;;;;;;;x
+MARX_CULT_HEAD_FEMALE;General Secretary;;;;;;;;;x
+MARX_CULT_HEAD_FOA;Dear Secretary;;;;;;;;;x
+d_marx_cult;The Communist Party;;;;;;;;;x
+d_marx_cult_adj;Communist;;;;;;;;;x
+d_wobblies;The Wobblies;;;;;;;;;x
+d_black_panthers;The Black Panthers;;;;;;;;;x
+d_zapatistas;The Zapatistas;;;;;;;;;x
+SUB_COMMANDANTE;Sub-Commandante;;;;;;;;;x
+SUB_COMMANDANTE_FOA;Sub-Commandante;;;;;;;;;x
+
+##### Titles
+####### Marxist
+temple_baron_marxist;Commissar;;;;;;;;;x
+temple_baron_female_marxist;Commissar;;;;;;;;;x
+temple_count_marxist;Commissar;;;;;;;;;x
+temple_count_female_marxist;Commissar;;;;;;;;;x
+temple_duke_marxist;Chief Commissar;;;;;;;;;x
+temple_duke_female_marxist;Chief Commissar;;;;;;;;;x
+temple_king_marxist;Commissary General;;;;;;;;;x
+temple_king_female_marxist;Commissary General;;;;;;;;;x
+temple_emperor_marxist;Chairman;;;;;;;;;x
+temple_emperor_female_marxist;Chairman;;;;;;;;;x
+city_baron_marxist;Mayor;;;;;;;;;x
+city_baron_female_marxist;Mayor;;;;;;;;;x
+city_count_marxist;Councilor;;;;;;;;;x
+city_count_female_marxist;Councilor;;;;;;;;;x
+city_duke_marxist;Representative;;;;;;;;;x
+city_duke_female_marxist;Representative;;;;;;;;;x
+city_king_marxist;Prime Minister;;;;;;;;;x
+city_king_female_marxist;Prime Minister;;;;;;;;;x
+city_emperor_marxist;Chairman;;;;;;;;;x
+city_emperor_female_marxist;Chairwoman;;;;;;;;;x
+baron_marxist;Deputy Commissioner;;;;;;;;;x
+baron_female_marxist;Deputy Commissioner;;;;;;;;;x
+count_marxist;Commissioner;;;;;;;;;x
+count_female_marxist;Commissioner;;;;;;;;;x
+duke_marxist;Administrator;;;;;;;;;x
+duke_female_marxist;Administrator;;;;;;;;;x
+king_marxist;Governor;;;;;;;;;x
+king_female_marxist;Governor;;;;;;;;;x
+emperor_marxist;Premier;;;;;;;;;x
+emperor_female_marxist;Premier;;;;;;;;;x
+title_prince_marxist;Comrade;;;;;;;;;x
+title_prince_female_marxist;Comrade;;;;;;;;;x
+temple_barony_of_marxist;Commissariat of;;;;;;;;;x
+temple_county_of_marxist;Commissariat of;;;;;;;;;x
+temple_duchy_of_marxist;Commissariat of;;;;;;;;;x
+temple_kingdom_of_marxist;Commissariat of;;;;;;;;;x
+temple_empire_of_marxist;Commissariat of;;;;;;;;;x
+city_barony_of_marxist;Commune of;;;;;;;;;x
+barony_of_marxist;Outpost of;;;;;;;;;x
+county_of_marxist;County of;;;;;;;;;x
+duchy_of_marxist;District of;;;;;;;;;x
+kingdom_of_marxist;Republic of;;;;;;;;;x
+empire_of_marxist;United Socialist Republics of;;;;;;;;;x
+job_spiritual_marxist;Minister of Propaganda;;;;;;;;;x
+job_chancellor_marxist;Foreign Minister;;;;;;;;;x
+job_marshal_marxist;Minister of Defense;;;;;;;;;x
+job_treasurer_marxist;Minister of Finance;;;;;;;;;x
+job_spymaster_marxist;Minister of the Interior;;;;;;;;;x
+
+####### Anarchist
+temple_baron_anarchist;Comrade;;;;;;;;;x
+temple_baron_female_anarchist;Comrade;;;;;;;;;x
+temple_count_anarchist;Comrade;;;;;;;;;x
+temple_count_female_anarchist;Comrade;;;;;;;;;x
+temple_duke_anarchist;Comrade;;;;;;;;;x
+temple_duke_female_anarchist;Comrade;;;;;;;;;x
+temple_king_anarchist;Comrade;;;;;;;;;x
+temple_king_female_anarchist;Comrade;;;;;;;;;x
+temple_emperor_male_anarchist;Comrade;;;;;;;;;x
+temple_emperor_female_anarchist;Comrade;;;;;;;;;x
+city_baron_anarchist;Comrade;;;;;;;;;x
+city_baron_female_anarchist;Comrade;;;;;;;;;x
+city_count_anarchist;Comrade;;;;;;;;;x
+city_count_female_anarchist;Comrade;;;;;;;;;x
+city_duke_anarchist;Comrade;;;;;;;;;x
+city_duke_female_anarchist;Comrade;;;;;;;;;x
+city_king_anarchist;Comrade;;;;;;;;;x
+city_king_female_anarchist;Comrade;;;;;;;;;x
+city_emperor_anarchist;Comrade;;;;;;;;;x
+city_emperor_female_anarchist;Comrade;;;;;;;;;x
+baron_anarchist;Comrade;;;;;;;;;x
+baron_female_anarchist;Comrade;;;;;;;;;x
+count_anarchist;Comrade;;;;;;;;;x
+count_female_anarchist;Comrade;;;;;;;;;x
+duke_anarchist;Comrade;;;;;;;;;x
+duke_female_anarchist;Comrade;;;;;;;;;x
+king_anarchist;Comrade;;;;;;;;;x
+king_female_anarchist;Comrade;;;;;;;;;x
+emperor_anarchist;Comrade;;;;;;;;;x
+emperor_female_anarchist;Comrade;;;;;;;;;x
+title_prince_anarchist;Comrade;;;;;;;;;x
+title_prince_female_anarchist;Comrade;;;;;;;;;x
+barony_of_anarchist;Commune of;;;;;;;;;x
+county_of_anarchist;Union of;;;;;;;;;x
+duchy_of_anarchist;Coalition of;;;;;;;;;x
+kingdom_of_anarchist;Syndicate of;;;;;;;;;x
+empire_of_anarchist;Free Territory of;;;;;;;;;x
+job_spiritual_anarchist;Head of Agitprop;;;;;;;;;x
+job_chancellor_anarchist;Speaker;;;;;;;;;x
+job_marshal_anarchist;Militia Delegate;;;;;;;;;x
+job_treasurer_anarchist;Industrial Coordinator;;;;;;;;;x
+job_spymaster_anarchist;Chief of Opsec;;;;;;;;;x

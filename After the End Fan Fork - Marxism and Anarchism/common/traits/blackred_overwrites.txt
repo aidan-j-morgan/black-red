@@ -1,0 +1,817 @@
+greedy = {
+	personality = yes
+	opposites = {
+		charitable
+	}
+	
+	vice = yes
+	consumerist_opinion = 5
+	monetarist_opinion = 5
+	brethren_opinion = 5
+	marxist_opinion = -5
+	anarchist_opinion = -10
+	
+	global_tax_modifier = 0.1
+	diplomacy = -1
+	
+	ai_honor = -10
+	ai_ambition = 15
+	ai_greed = 100
+	
+	male_insult_adj = INSULT_COVETOUS
+	female_insult_adj = INSULT_VENAL
+	child_insult_adj = INSULT_STUPID
+}
+
+peasant_leader = {
+	diplomacy = -5
+	combat_rating = 3 #new value!
+	
+	same_opinion = 25
+	
+	vassal_opinion = -10
+	marxist_opinion = 10
+	anarchist_opinion = 15
+
+	rebel_inherited = yes
+	customizer = no
+	
+	male_insult = INSULT_PEASANT
+	male_insult_adj = INSULT_LOWBORN
+	female_insult = INSULT_PEASANT_WOMAN
+	female_insult_adj = INSULT_LOWBORN
+}
+
+##### Crusader Traits #####
+crusader = {
+	opposites = {
+		crusader_king
+		crusader_queen
+		mujahid
+		valhalla_bound
+		jaguar_warrior
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_compliment = COMPL_CRUSADER
+	female_compliment = COMPL_CRUSADER
+}
+
+crusader_king = {
+	opposites = {
+		crusader
+		crusader_queen
+		mujahid
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		lughs_own
+		jaguar_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	ai_zeal = 20
+
+	martial = 3
+	global_levy_size = 0.2
+	combat_rating = 15
+	
+	command_modifier = {
+		religious_enemy = 0.3
+	}
+
+	same_religion_opinion = 35
+	
+	customizer = no
+	random = no
+}
+
+crusader_queen = {
+	opposites = {
+		crusader
+		crusader_king
+		mujahid
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		lughs_own
+		jaguar_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+
+	ai_zeal = 20
+
+	martial = 3
+	global_levy_size = 0.2
+	combat_rating = 15
+	
+	command_modifier = {
+		religious_enemy = 0.3
+	}
+
+	same_religion_opinion = 35
+	
+	customizer = no
+	random = no
+}
+
+mujahid = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		valhalla_bound
+		jaguar_warrior
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		cavalier
+		hivernant
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	muslim_opinion = 5
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_compliment = COMPL_MUJAHID
+	female_compliment = COMPL_MUJAHID
+}
+
+valhalla_bound = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		shaddai
+		jaguar_warrior
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	pagan_group_opinion = 5
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_compliment = COMPL_VALHALLA_BOUND_MALE
+	female_compliment = COMPL_VALHALLA_BOUND_FEMALE
+}
+
+fords_striker = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+jaguar_warrior = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		valhalla_bound
+		lughs_own
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+shaddai = {
+	opposites = {
+		mujahid
+		valhalla_bound
+		crusader
+		crusader_king
+		crusader_queen
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		jaguar_warrior
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+dragon_soldier = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		valhalla_bound
+		jaguar_warrior
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		thunderbird_warrior
+		raven_warrior
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+sword_of_the_lamb = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+knight_templar = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+danite = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+order_of_the_garter = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+lughs_own = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		valhalla_bound
+		jaguar_warrior
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		shaddai
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+cavalier = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		order_of_the_garter
+		hivernant
+		joropo_cantor
+		medal_of_honor
+		patriota
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+joropo_cantor = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		dragon_soldier
+		hivernant
+		cavalier
+		fords_striker
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+thunderbird_warrior = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		lughs_own
+		danite
+		raven_warrior
+		dragon_soldier
+		hivernant
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+raven_warrior = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		jaguar_warrior
+		shaddai
+		valhalla_bound
+		fords_striker
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		lughs_own
+		danite
+		thunderbird_warrior
+		dragon_soldier
+		hivernant
+		joropo_cantor
+		medal_of_honor
+		patriota
+		hero_of_labor
+	}
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	customizer = no
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}
+
+hivernant = {
+	opposites = {
+		crusader
+		crusader_king
+		crusader_queen
+		mujahid
+		shaddai
+		fords_striker
+		valhalla_bound
+		sword_of_the_lamb
+		knight_templar
+		order_of_the_garter
+		danite
+		lughs_own
+		thunderbird_warrior
+		raven_warrior
+		jaguar_warrior
+		dragon_soldier
+		cavalier
+		joropo_cantor
+		medal_of_honor
+		patriota
+	}
+	
+	
+	random = no
+	customizer = no
+	
+	martial = 2
+	combat_rating = 10 #old value: 1
+	
+	church_opinion = 15
+	same_opinion_if_same_religion = 15
+	
+	ai_zeal = 10
+	
+	male_insult = INSULT_FANATIC
+	female_insult = INSULT_FANATIC
+	male_insult_adj = INSULT_NARROWMINDED
+	female_insult_adj = INSULT_NARROWMINDED
+	male_compliment_adj = COMPL_RIGHTEOUS
+	female_compliment_adj = COMPL_RIGHTEOUS
+}

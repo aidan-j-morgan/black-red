@@ -1,0 +1,5 @@
+2666.1.1={
+	law = succ_dotp_elective
+	holder = 9999998
+	liege = d_cincy
+}

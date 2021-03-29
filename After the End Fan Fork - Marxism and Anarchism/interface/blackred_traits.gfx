@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_school_hammer"
+		texturefile = "gfx/traits/school_hammer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_sickle"
+		texturefile = "gfx/traits/school_sickle.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_book"
+		texturefile = "gfx/traits/school_book.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_school_fist"
+		texturefile = "gfx/traits/school_fist.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_hero_of_labor"
+		texturefile = "gfx/traits/hero_of_labor.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

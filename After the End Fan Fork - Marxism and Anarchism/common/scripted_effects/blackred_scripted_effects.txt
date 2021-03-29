@@ -1,0 +1,178 @@
+add_crusade_trait_effect = {
+	if = {
+		limit = {
+			religion = marxist
+		}
+		add_trait = hero_of_labor
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = norse_pagan
+				religion = norse_pagan_reformed
+			}
+		}
+		add_trait = valhalla_bound
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = revelationist
+				religion = revelationist_reformed
+			}
+		}
+		add_trait = sword_of_the_lamb
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = rust_cultist
+				religion = chrome_cultist
+			}
+		}
+		add_trait = fords_striker
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = occultist
+				religion = occultist_reformed
+			}
+		}
+		add_trait = knight_templar
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = thelemic
+				religion = thelemic_reformed
+			}
+		}
+		add_trait = order_of_the_garter
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = celtic_pagan
+				religion = celtic_pagan_reformed
+			}
+		}
+		add_trait = lughs_own
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = aria_de_machete
+				religion = aria_de_machete_reformed
+			}
+		}
+		add_trait = joropo_cantor
+		break = yes
+	}
+	if = {
+		limit = {
+			religion_group = christian
+		}
+		add_trait = crusader
+		break = yes
+	}
+	if = {
+		limit = {
+			religion_group = latter_day_saints
+		}
+		add_trait = danite
+		break = yes
+	}
+	if = {
+		limit = {
+			religion_group = muslim
+		}
+		add_trait = mujahid
+		break = yes
+	}
+	if = {
+		limit = {
+			religion_group = jewish_group
+		}
+		add_trait = shaddai
+		break = yes
+	}
+	if = {
+		limit = {
+			religion = espiritista
+		}
+		add_trait = jaguar_warrior
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = midewiwin
+				religion = midewiwin_reformed
+			}
+		}
+		add_trait = thunderbird_warrior
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = raven_tales
+				religion = raven_tales_reformed
+			}
+		}
+		add_trait = raven_warrior
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = atomicist
+				religion = aphite
+			}
+		}
+		add_trait = dragon_soldier
+		break = yes
+	}
+	if = {
+		limit = {
+			religion = exovedate
+		}
+		add_trait = hivernant
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = trailwalker
+				religion = trailwalker_reformed
+			}
+		}
+		add_trait = cavalier
+		break = yes
+	}
+	if = {
+		limit = {
+			OR = {
+				religion = aria_de_machete
+				religion = aria_de_machete_reformed
+			}
+		}
+		add_trait = joropo_cantor
+		break = yes
+	}
+	if = {
+		limit = {
+			religion = patria_grande
+		}
+		add_trait = patriota
+		break = yes
+	}
+}

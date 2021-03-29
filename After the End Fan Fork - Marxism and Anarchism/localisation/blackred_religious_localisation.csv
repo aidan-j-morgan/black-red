@@ -1,0 +1,85 @@
+#CODE;ENGLISH;;;;;;;;;x
+##### Shared Localizations
+PRAXIS;Praxis;;;;;;;;;x
+STAT_PIETY_PRAXIS;Praxis;;;;;;;;;x
+STAT_PIETY_DESC_PRAXIS;Praxis is respected by the commissary and especially by the head of your Religion. It can be spent to petition the head of your Religion. Like Prestige, it is added to your score on the death of a ruler.;;;;;;;;;x
+STAT_PIETY_MENU_PRAXIS;Praxis;;;;;;;;;x
+GOD_THE_REVOLUTION;The Revolution;;;;;;;;;x
+GOD_THE_PROLETARIAT;The Proletariat;;;;;;;;;x
+PROFIT;Profit;;;;;;;;;x
+CAPITALISM;Capitalism;;;;;;;;;x
+THE_BOURGEOISIE;The Bourgeoisie;;;;;;;;;x
+
+##### Marxist Localizations
+marxist;Marxist;;;;;;;;;x
+marxist_DESC;Servants of the ancient enemy of Americanist and Consumerist belief, Marxists follow the teachings of the sage Marx, known variously as Socialism, Communism, and to the Marxists themselves, the Diamat. The most important entry in the Diamat is Capital: a ten-thousand-page tome that Marxist scholars believe details the sins and cosmic transgressions that led to the Event and provides a guide to preventing its second coming.;;;;;;;;x
+marxist_opinion;Marxist Opinion;;;;;;;;;x
+THE_DIAMAT;The Diamat;;;;;;;;;x
+COMMISSARY;Commissary;;;;;;;;;x
+GREAT_PATRIOTIC_WAR;Great Patriotic War;;;;;;;;;x
+GOD_MARX;Marx;;;;;;;;;x
+GOD_ENGELS;Engels;;;;;;;;;x
+
+##### Anarchist Localizations
+anarchist;Anarchist;;;;;;;;;x
+anarchist_DESC;While also professing to serve the ancient enemy of Old America, Anarchists place less emphasis on the writings of the sage Marx and his disciples—particularly in regards to Marx’s Dictatorship, which is intended to bring about the liberated state known as Revolution. Anarchists believe that the Dictatorship will instead impede the attainment of Revolution and fail to prevent the Event’s second coming. They instead advocate for individual commitment to Praxis and champion self-determination.;;;;;;;;;x
+anarchist_opinion;Anarchist Opinion;;;;;;;;;x
+THE_BREAD_BOOK;The Bread Book;;;;;;;;;x
+COMRADE;Comrade;;;;;;;;;x
+GOD_BAKUNIN;Bakunin;;;;;;;;;x
+GOD_KROPOTKIN;Kropotkin;;;;;;;;;x
+GOD_PROUDHON;Proudhon;;;;;;;;;x
+
+##### Secret Societies
+secret_religious_society_marxist;The Vanguard;;;;;;;;;x
+alt_start_community_name_marxist;The [marxist.GetName] Faithful;;;;;;;;;x
+secret_religious_society_marxist_desc;When the Diamat does not dictate overt action, the followers of Marx remain concealed and gather their strength. Underground propaganda networks and sleeper cells, they position themselves in optimal positions to strike when the time is right and announce a new People’s Government.;;;;;;;;x
+secret_religious_society_marxist_currency;Devotion;;;;;;;;;x
+secret_religious_society_marxist_rank_1_female;Faithful;;;;;;;;;x
+secret_religious_society_marxist_rank_2_female;Adherent;;;;;;;;;x
+secret_religious_society_marxist_rank_3_female;Preacher;;;;;;;;;x
+secret_religious_society_marxist_rank_4_female;Herald;;;;;;;;;x
+secret_religious_society_marxist_rank_1_male;Faithful;;;;;;;;;x
+secret_religious_society_marxist_rank_2_male;Adherent;;;;;;;;;x
+secret_religious_society_marxist_rank_3_male;Preacher;;;;;;;;;x
+secret_religious_society_marxist_rank_4_male;Herald;;;;;;;;;x
+secret_religious_community_marxist;Secret Marxist Community;;;;;;;;;x
+secret_marxist_community;Secret Marxist Community;;;;;;;;;x
+secret_marxist_community_desc;In secret, Marxist faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;x
+secret_religious_society_anarchist;The Insurrection;;;;;;;;;x
+alt_start_community_name_anarchist;The [anarchist.GetName] Faithful;;;;;;;;;x
+secret_religious_society_anarchist_desc;Anarchists have long been oppressed; concealing their faith is nothing new to them. Living in small communes both within and outside of major population centers, Anarchists are able to garner sympathy for their cause and prepare for when they’ll come into the light..;;;;;;;;x
+secret_religious_society_anarchist_currency;Devotion;;;;;;;;;x
+secret_religious_society_anarchist_rank_1_female;Faithful;;;;;;;;;x
+secret_religious_society_anarchist_rank_2_female;Adherent;;;;;;;;;x
+secret_religious_society_anarchist_rank_3_female;Preacher;;;;;;;;;x
+secret_religious_society_anarchist_rank_4_female;Herald;;;;;;;;;x
+secret_religious_society_anarchist_rank_1_male;Faithful;;;;;;;;;x
+secret_religious_society_anarchist_rank_2_male;Adherent;;;;;;;;;x
+secret_religious_society_anarchist_rank_3_male;Preacher;;;;;;;;;x
+secret_religious_society_anarchist_rank_4_male;Herald;;;;;;;;;x
+secret_religious_community_anarchist;Secret Anarchist Community;;;;;;;;;x
+secret_anarchist_community;Secret Anarchist Community;;;;;;;;;x
+secret_anarchist_community_desc;In secret, Anarchist faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;x
+
+##### New traits
+school_hammer;School of the Hammer;;;;;;;;;x
+school_hammer_desc;Adherents of the School of the Hammer are characterized by a strong commitment to spreading the Revolution, especially into areas controlled by the Reaction. Favoring a doctrine of harassment and light infantry, the School of the Hammer is as much a military philosophy as a religious one. Those who subscribe to this school favor the teachings of scholars such as Trotsky, Che, and Gonzalo.;;;;;;;;;x
+school_sickle;School of the Sickle;;;;;;;;;x
+school_sickle_desc;Adherents of the School of the Sickle believe that Marxist realms must primarily be concerned with internal security, and that a house on a weak foundation cannot stand. By purging the forces of Reaction in one’s own realm, the Revolution is safeguarded against those who secretly serve the Enemy. Scholars of this school include Stalin, Castro, and Hoxha.;;;;;;;;;x
+school_book;School of the Book;;;;;;;;;x
+school_book_desc;Adherents of the School of the Book believe that only by an exact and uncompromising fulfillment of Capital can the Second Event be prevented. Holding that scholars of other Schools of Thought failed in their attempts to prevent the first Event, members of this School emphasize the primacy of the writings of Marx and Engels, largely dismissing other philosophers as warlords and demagogues.;;;;;;;;;x
+school_fist;School of the Fist;;;;;;;;;x
+school_fist_desc;Adherents of the School of the Fist believe that the Party should, first and foremost, stand in opposition to the hegemony of imperial powers such as the Confederacy, California, and Brazil. Holding that each culture has the right to their own interpretation of Marxist theory, scholars of this School of Thought include Mao, Sankara, and Ho.;;;;;;;;;x
+hero_of_labor;Hero of Labor;;;;;;;;;x
+hero_of_labor_desc;Those who have served the Revolution in a Great Patriotic War are considered Heroes of Labor.;;;;;;;;;x
+
+##### Modifiers
+supported_peasants;Supported Peasants;;;;;;;;;x
+supported_nobles;Supported Nobles;;;;;;;;;x
+held_rally;Held Rally;;;;;;;;;x
+held_rally_effect;Held Rally;;;;;;;;;x
+reeducation_campaign_effect;Reeducation Campaign;;;;;;;;;x
+held_rally_effects;Held Rally;;;;;;;;;x
+formed_ussa;Formed the U.S.S.A.;;;;;;;;;x
+international_solidarity;Declared Fifth International;;;;;;;;;x

@@ -1,0 +1,29 @@
+#CODE;ENGLISH;;;;;;;;;x
+##### Governments
+dotp_government;Dictatorial;;;;;;;;;x
+dotp_government_desc;In proletarian dictatorships, land and property are governed by appointed or elected Party officials.;;;;;;;;;x
+gov_dotp;Proletarian Dictatorship;;;;;;;;;x
+gov_dotp_rep;People’s Republic;;;;;;;;;x
+succ_dotp_elective;Politburo Elective;;;;;;;;;x
+succ_dotp_elective_desc;In a dictatorial realm, the Politburo convenes to select an appropriate successor from Marxists in the realm.;;;;;;;;;x
+dotp_elective;Politburo Election;;;;;;;;;x
+communal_government;Communal;;;;;;;;;x
+communal_government_desc;In communal realms, land and property are owned collectively and represented by local delegates.;;;;;;;;;x 
+gov_communal;Communal Government;;;;;;;;;x
+succ_communal_elective;Communal Elective;;;;;;;;;x
+succ_communal_elective_desc;Under communal succession, delegates from all across the realm convene to select their preferred candidate.;;;;;;;;;x
+communal_elective;Communal Election;;;;;;;;;x
+
+##### Voting
+####### Vote strength
+tooltip_dotp_vote_strength_marx_cult;[Root.GetFirstName] is General Secretary;;;;;;;;;x
+tooltip_dotp_vote_strength_ruler_diplomacy;[Root.GetFirstName] is an able diplomat;;;;;;;;;x
+tooltip_dotp_vote_strength_ruler_martial;[Root.GetFirstName] is a skillful general;;;;;;;;;x
+tooltip_dotp_vote_strength_ruler_stewardship;[Root.GetFirstName] is a shrewd administrator;;;;;;;;;x
+tooltip_dotp_vote_strength_ruler_intrigue;[Root.GetFirstName] is a cunning politician;;;;;;;;;x
+tooltip_dotp_vote_strength_learning;[Root.GetFirstName] is an intelligent scholar;;;;;;;;;x
+tooltip_dotp_vote_strength_councilor;[Root.GetFirstName] is a competent [Root.GetJobTitle];;;;;;;;;x
+tooltip_dotp_elector_vote_learning;[From.GetSubjectPronounCap] is an intelligent [From.GetManWoman];;;;;;;;;x
+tooltip_dotp_elector_vote_councilor;[From.GetFirstName] is on the Politburo;;;;;;;;;x
+tooltip_comm_vote_strength;[Root.GetFirstName] is a persuasive [Root.GetManWoman];;;;;;;;;x
+tooltip_comm_elector_vote_nepotism;[From.GetSubjectPronounCap] is a nepotistic choice;;;;;;;;;x
