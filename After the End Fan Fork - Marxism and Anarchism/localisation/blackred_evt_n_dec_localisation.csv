@@ -5,11 +5,11 @@ found_party_desc;By organizing a Party, the words of Marx can be more easily spr
 found_ussa;Found the U.S.S.A.;;;;;;;;;x
 found_ussa_desc;Under my leadership, [Root.Religion.GetName] philosophy has firmly established itself in the Americas. It’s time to make it official.;;;;;;;;;x
 vassalize_wobblies;Vassalize the Wobblies;;;;;;;;;x
-vassalize_wobblies_desc;We should negotiate for the Wobblies to join us.;;;;;;;;;x
+vassalize_wobblies_marxist_desc;Negotiate for the loyalty of the Wobblies;;;;;;;;;x
 vassalize_black_panthers;Vassalize the Black Panthers;;;;;;;;;x
-vassalize_black_panthers_desc;We should negotiate for the Black Panthers to join us.;;;;;;;;;x
-vassalize_zapatistas;Vassalize the Zapatistas;;;;;;;;;x
-vassalize_zapatistas_desc;We should negotiate for the Zapatistas to join us.;;;;;;;;;x
+vassalize_black_panthers_marxist;Negotiate for the loyalty of the Black Panthers;;;;;;;;;x
+vassalize_zapatistas_marxist;Vassalize the Zapatistas;;;;;;;;;x
+vassalize_zapatistas_marxist_desc;Negotiate for the loyalty of the Zapatistas;;;;;;;;;x
 adopt_marxist_branch;Adopt a Marxist School;;;;;;;;;x
 TXT_adopt_marxist_branch;Adopt a Marxist philosopher’s teachings;;;;;;;;;x
 adopt_marxist_branch_desc;Decide on a school of thought to adopt.;;;;;;;;;x
@@ -34,6 +34,27 @@ EVT_OPT_C_blackred.2;These radicals must be stopped.;;;;;;;;;x
 EVT_NAME_blackred.3;The Counter-Revolution;;;;;;;;;x
 EVT_DESC_blackred.3;Though your fellow leftists applaud your efforts, there are those who would rather defend the old order. Your spymaster reports that the Men in Black have been spotted in your realm.;;;;;;;;;x
 EVT_OPT_blackred.3;We have no compassion, and we ask no compassion from them.;;;;;;;;;x
+EVT_NAME_blackred.4;The Wobblies;;;;;;;;;x
+EVT_DESC_A_blackred.4;The negotiations with the Wobblies are nearly complete. Only one topic remains on the agenda: how shall we address our religious differences?;;;;;;;;;x
+EVT_DESC_B_blackred.4;The negotiations with the Wobblies are nearly complete. All that remains is to pay a settlement to compensate them for their lost independence.;;;;;;;;;x
+EVT_OPT_A1_blackred.4;We shall negotiate their conversion to Marxism.;;;;;;;;;x
+EVT_OPT_A2_blackred.4;They may keep their old ideology.;;;;;;;;;x
+EVT_OPT_B_blackred.4;With this show of goodwill, their loyalty is secured.;;;;;;;;;x
+EVT_OPT_C_blackred.4;On second thought, let’s table this for later.;;;;;;;;;x
+EVT_NAME_blackred.5;The Black Panthers;;;;;;;;;x
+EVT_DESC_A_blackred.5;The negotiations with the Black Panthers are nearly complete. All that remains is to pay a settlement to compensate them for their lost independence.;;;;;;;;;x
+EVT_DESC_B_blackred.5;The negotiations with the Black Panthers are nearly complete. Only one topic remains on the agenda: how shall we address our religious differences?;;;;;;;;;x
+EVT_OPT_A1_blackred.5;We shall negotiate their conversion to Anarchism.;;;;;;;;;x
+EVT_OPT_A2_blackred.5;They may keep their old ideology.;;;;;;;;;x
+EVT_OPT_B_blackred.5;With this show of goodwill, their loyalty is secured.;;;;;;;;;x
+EVT_OPT_C_blackred.5;On second thought, let’s table this for later.;;;;;;;;;x
+EVT_NAME_blackred.6;The Zapatistas;;;;;;;;;x
+EVT_DESC_A_blackred.6;The negotiations with the Zapatistas are nearly complete. Only one topic remains on the agenda: how shall we address our religious differences?;;;;;;;;;x
+EVT_DESC_B_blackred.6;The negotiations with the Zapatistas are nearly complete. All that remains is to pay a settlement to compensate them for their lost independence.;;;;;;;;;x
+EVT_OPT_A1_blackred.6;We shall negotiate their conversion to Marxism.;;;;;;;;;x
+EVT_OPT_A2_blackred.6;They may keep their old ideology.;;;;;;;;;x
+EVT_OPT_B_blackred.6;With this show of goodwill, their loyalty is secured.;;;;;;;;;x
+EVT_OPT_C_blackred.6;On second thought, let’s table this for later.;;;;;;;;;x
 EVT_DESC_blackred.96;The time has come to declare the dictatorship of the proletariat.;;;;;;;;;x
 EVT_OPT_blackred.96;Long live the Revolution!;;;;;;;;;x
 EVT_DESC_blackred.97;The time has come to restructure our society and tear down the unjust hierarchies.;;;;;;;;;x

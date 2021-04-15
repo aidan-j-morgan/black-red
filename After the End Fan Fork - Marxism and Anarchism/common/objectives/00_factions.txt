@@ -4452,6 +4452,8 @@ faction_independence = {
 				OR = {
 					religion = ROOT
 					culture = ROOT
+					trait = school_fist
+					religion = anarchist
 				}
 				NOT = { distance = { who = ROOT distance = 200 } }
 			}

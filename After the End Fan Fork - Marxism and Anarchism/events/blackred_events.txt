@@ -126,6 +126,212 @@ character_event = {
 	}
 }
 
+# Vassalize Wobblies
+character_event = {
+	id = blackred.4
+	title = EVT_NAME_blackred.4
+	is_triggered_only = yes
+	desc = {
+		trigger = { religion = marxist }
+		text = EVT_DESC_A_blackred.4
+	}
+	desc = {
+		trigger = { religion = anarchist }
+		text = EVT_DESC_B_blackred.4
+	}
+	option = { # Vassalize and convert
+		name = EVT_OPT_A1_blackred.4
+		trigger = { religion = marxist }
+		wealth = -500
+		piety = -4000
+		d_wobblies = {
+			religion = {
+				target_type = public
+				target = ROOT
+			}
+			holder_scope = {
+				wealth = 500
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+				religion = {
+					target_type = public
+					target = ROOT
+				}
+			}
+		}
+	}
+	option = { # Only vassalize
+		name = EVT_OPT_A2_blackred.4
+		trigger = { religion = marxist }
+		wealth = -300
+		piety = -2500
+		d_wobblies = {
+			holder_scope = {
+				wealth = 300
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Anarchist option
+		name = EVT_OPT_B_blackred.4
+		trigger = { religion = anarchist }
+		wealth = -300
+		piety = -2500
+		d_wobblies = {
+			holder_scope = {
+				wealth = 300
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Delay
+		name = EVT_OPT_C_blackred.4
+	}
+}
+
+# Vassalize Black Panthers
+character_event = {
+	id = blackred.5
+	title = EVT_NAME_blackred.5
+	is_triggered_only = yes
+	desc = {
+		trigger = { religion = marxist }
+		text = EVT_DESC_A_blackred.5
+	}
+	desc = {
+		trigger = { religion = anarchist }
+		text = EVT_DESC_B_blackred.5
+	}
+	option = { # Vassalize and convert
+		name = EVT_OPT_A1_blackred.5
+		trigger = { religion = anarchist }
+		wealth = -500
+		piety = -4000
+		d_black_panthers = {
+			religion = {
+				target_type = public
+				target = ROOT
+			}
+			holder_scope = {
+				wealth = 500
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+				religion = {
+					target_type = public
+					target = ROOT
+				}
+			}
+		}
+	}
+	option = { # Only vassalize
+		name = EVT_OPT_A2_blackred.5
+		trigger = { religion = anarchist }
+		wealth = -300
+		piety = -2500
+		d_black_panthers = {
+			holder_scope = {
+				wealth = 300
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Marxist option
+		name = EVT_OPT_B_blackred.5
+		trigger = { religion = marxist }
+		wealth = -200
+		piety = -2000
+		d_black_panthers = {
+			holder_scope = {
+				wealth = 500
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Delay
+		name = EVT_OPT_C_blackred.5
+	}
+}
+
+# Vassalize Zapatistas
+character_event = {
+	id = blackred.6
+	title = EVT_NAME_blackred.6
+	is_triggered_only = yes
+	desc = {
+		trigger = { religion = marxist }
+		text = EVT_DESC_A_blackred.6
+	}
+	desc = {
+		trigger = { religion = anarchist }
+		text = EVT_DESC_B_blackred.6
+	}
+	option = { # Vassalize and convert
+		name = EVT_OPT_A1_blackred.6
+		trigger = { religion = marxist }
+		wealth = -500
+		piety = -4000
+		d_zapatistas = {
+			religion = {
+				target_type = public
+				target = ROOT
+			}
+			holder_scope = {
+				wealth = 500
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+				religion = {
+					target_type = public
+					target = ROOT
+				}
+			}
+		}
+	}
+	option = { # Only vassalize
+		name = EVT_OPT_A2_blackred.6
+		trigger = { religion = marxist }
+		wealth = -300
+		piety = -2500
+		d_zapatistas = {
+			}
+			holder_scope = {
+				wealth = 300
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Anarchist option
+		name = EVT_OPT_B_blackred.6
+		trigger = { religion = anarchist }
+		wealth = -300
+		piety = -2500
+		d_zapatistas = {
+			holder_scope = {
+				wealth = 300
+				ROOT = {
+					set_defacto_vassal = PREV
+				}
+			}
+		}
+	}
+	option = { # Delay
+		name = EVT_OPT_C_blackred.6
+	}
+}
+		
+
 # Marxist cleanup event
 character_event = {
 	id = blackred.96

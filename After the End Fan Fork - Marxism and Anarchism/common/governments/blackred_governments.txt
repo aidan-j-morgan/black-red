@@ -41,7 +41,6 @@ feudal_governments = {
 		dukes_called_kings = yes
 		barons_need_dynasty = no
 		allows_matrilineal_marriage = yes
-		ignores_de_jure_laws = yes
 
 		can_build_tribal = no
 		

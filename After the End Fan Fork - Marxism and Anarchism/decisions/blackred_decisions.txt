@@ -86,10 +86,6 @@ decisions = {
 				has_landed_title = e_dixie
 				has_landed_title = e_new_south
 				has_landed_title = e_california
-				has_landed_title = e_mexico
-				has_landed_title = e_caribbean
-				has_landed_title = e_colombia
-				has_landed_title = e_venezuela
 			}
 		}
 		effect = {
@@ -149,9 +145,10 @@ decisions = {
 		potential = {
 			is_alternate_start = no
 			any_demesne_title = { tier = EMPEROR }
+			any_realm_province = { region = custom_chicagoland }
 			OR = {
-				religion = marxist
 				religion = anarchist
+				religion = marxist
 			}
 			is_title_active = d_wobblies
 			d_wobblies = {
@@ -175,17 +172,7 @@ decisions = {
 			realm_size = 220
 		}
 		
-		effect = {
-			wealth = -300
-			d_wobblies = {
-				holder_scope = {
-					wealth = 300
-					ROOT = {
-						set_defacto_vassal = PREV
-					}
-				}
-			}
-		}
+		effect = { character_event = { id = blackred.4 } }
 		
 		revoke_allowed = {
 			always = no
@@ -202,6 +189,7 @@ decisions = {
 		potential = {
 			is_alternate_start = no
 			any_demesne_title = { tier = EMPEROR }
+			any_realm_province = { region = custom_california }
 			OR = {
 				religion = marxist
 				religion = anarchist
@@ -228,17 +216,7 @@ decisions = {
 			realm_size = 220
 		}
 		
-		effect = {
-			wealth = -300
-			d_black_panthers = {
-				holder_scope = {
-					wealth = 300
-					ROOT = {
-						set_defacto_vassal = PREV
-					}
-				}
-			}
-		}
+		effect = { character_event = { id = blackred.5 } }
 		
 		revoke_allowed = {
 			always = no
@@ -255,9 +233,10 @@ decisions = {
 		potential = {
 			is_alternate_start = no
 			any_demesne_title = { tier = EMPEROR }
+			any_realm_province = { region = custom_central_america }
 			OR = {
-				religion = marxist
 				religion = anarchist
+				religion = marxist
 			}
 			is_title_active = d_zapatistas
 			d_zapatistas = {
@@ -272,6 +251,7 @@ decisions = {
 					primary_title = { title = d_zapatistas }
 				}
 			}
+			character_event = { id = blackred.6 }
 		}
 		
 		allow = {
@@ -281,17 +261,7 @@ decisions = {
 			realm_size = 220
 		}
 		
-		effect = {
-			wealth = -300
-			d_zapatistas = {
-				holder_scope = {
-					wealth = 300
-					ROOT = {
-						set_defacto_vassal = PREV
-					}
-				}
-			}
-		}
+		effect = { character_event = { id = blackred.6 } }
 		
 		revoke_allowed = {
 			always = no

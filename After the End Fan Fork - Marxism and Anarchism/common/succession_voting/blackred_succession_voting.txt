@@ -155,13 +155,38 @@ communal_elective = {
 	elector_selection = {
 	max_amount = 100 # Pick the top 100 vassals to avoid incredible number spam
 	
-		days = -1 		#If below 0, ROOT is not valid to be an Elector.
+		days = -1
 
 		additive_modifier = { # Ruler always gets a vote
 			value = 100
 			FROMFROM = { 
 				holder_scope = { character = ROOT }
 			}
+		}
+		additive_modifier = {
+		value = 5
+			vassal_of = FROMFROM 
+			OR = { 
+				has_job_title = job_chancellor
+				has_job_title = job_marshal
+				has_job_title = job_treasurer
+				has_job_title = job_spymaster
+				has_job_title = job_spiritual
+				has_minor_title = title_councilmember_king #Generic advisors
+				has_minor_title = title_councilmember_emperor
+				has_minor_title = title_appointed_regent
+				has_minor_title = title_regent
+			}
+		}
+		additive_modifier = {
+			value = 5
+			vassal_of = FROMFROM
+			has_minor_title = title_commander
+		}
+		additive_modifier = {
+			value = 10
+			real_tier = BARON
+			any_defacto_liege = { title = FROMFROM }
 		}
 		additive_modifier = {
 			value = 10
@@ -177,6 +202,10 @@ communal_elective = {
 			value = 10
 			higher_real_tier_than = KING
 			any_defacto_liege = { title = FROMFROM }
+		}
+		additive_modifier = { # Liege doesn't get a say
+			value = -100
+			is_liege_of = FROMFROM
 		}
 	}
 	candidate_vote_score = {
@@ -2100,7 +2129,7 @@ communal_elective = {
 			}
 		}
 		additive_modifier = { #Shunned for being Greedy
-			value = -15
+			value = -30
 			localisation_key = tooltip_feudal_elector_vote_greedy_negative
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
@@ -3526,40 +3555,52 @@ communal_elective = {
 	
 	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
-		NOT = { character = FROM }
+		NOT = { character = FROM } #Not the current ruler.
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 
 					character = ROOT
-				}
+				} 
 				is_ruler = no
 				ROOT_FROMFROM = { holder_scope = { independent = yes } }
 				NOR = { 
 					ROOT_FROMFROM = { has_law = out_of_realm_inheritance_law_1 } 
 					ROOT_FROMFROM = { has_law = crown_authority_3 } 
 					ROOT_FROMFROM = { has_law = crown_authority_4 } 
-				}
+				} 
 			} 
 		} 
-		OR = {
-			FROM = { any_claim = { title = ROOT_FROMFROM } }
-			ROOT = { 
-				is_close_relative = FROM
-				OR = { 
-					dynasty = FROM
-					FROM = { is_landed = yes higher_real_tier_than = BARON }
+		FROM = {
+			OR = { #Candidate should not be a landless Courtier that is about to inherit a Theocracy or Republic
+				AND = {
+					is_ruler = yes
+					is_landed = yes
+					is_republic = no
+					is_merchant_republic = no
+					is_theocracy = no
+				}
+				NOR = {
+					any_heir_title = {
+						is_republic = yes
+					}
+					any_heir_title = {
+						is_merchant_republic = yes
+					}
+					any_heir_title = {
+						is_theocracy = yes
+					}
 				}
 			}
-			FROM = { 
-					OR = { #Either defacto direct vassal, or independent ruler who is dejure vassal.
-						vassal_of = ROOT
-						AND = { 
-						 	any_dejure_liege = { title = ROOT } 
-							independent = yes
-						}
+			OR = { #If the title controls the religion, candidates must be of the same religion.
+				ROOT = { 
+					NOT = { 
+						controls_religion = yes
 					}
+				}
+				religion = ROOT
 			}
 		}
+		
 		FROM = {
 			NOR = {
 				#mother = {		 # Uncommenting this condition provokes that a ruler's son is not a valid candidate if the mother is married to the ruler and a candidate
@@ -3575,13 +3616,6 @@ communal_elective = {
 				trait = cat
 				trait = disinherited
 				trait = horse
-				trait = eunuch
-				AND = { 
-					trait = bastard 
-					is_ruler = no
-				}
-				is_theocracy = yes
-				is_republic = yes
 				is_merchant_republic = yes
 			}
 		}
@@ -3974,16 +4008,16 @@ dotp_elective = {
 	}
 	
 	elector_selection = {
-		max_amount = 9 # Just enough to accommodate the entire council of a realm with full council authority plus one for the regent, liege, or general secretary
-		days = -5 		
+		max_amount = 8 # Just enough to accommodate the entire council of a realm with full council authority plus one for the regent
+		days = -10
 		additive_modifier = { # Ruler always gets a vote
-			value = 50
+			value = 100
 			FROMFROM = { 
 				holder_scope = { character = ROOT }
 			}
 		}
 		additive_modifier = { # Then the Politburo
-			value = 30
+			value = 50
 			vassal_of = FROMFROM 
 			OR = { 
 				has_job_title = job_chancellor
@@ -3994,17 +4028,26 @@ dotp_elective = {
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor
 				has_minor_title = title_appointed_regent
+				has_minor_title = title_regent
 			}
 		}
-		additive_modifier = { #Then the liege
+		additive_modifier = { # Then powerful vassals
+			value = 40
+			vassal_of = FROMFROM
+			is_powerful_vassal = yes
+		}
+		additive_modifier = { # Then commanders
+			value = 30
+			vassal_of = FROMFROM
+			has_minor_title = title_commander
+		}
+		additive_modifier = { # Then the liege
 			value = 20
 			is_liege_of	= FROMFROM 
 		}
-		additive_modifier = { #Then the General Secretary
+		additive_modifier = { # Finally, the general secretary
 			value = 10
-			FROMFROM = {
-				holder_scope = { rightful_religious_head = ROOT }
-			} 
+			has_landed_title = d_marx_cult
 		}
 	}
 	candidate_vote_score = {
@@ -4711,7 +4754,7 @@ dotp_elective = {
 		}
 		
 		additive_modifier = { # Politburo members are preferred
-			value = 15
+			value = 10
 			localisation_key = tooltip_dotp_elector_vote_councilor
 			FROM = { 
 				OR = { 
@@ -4722,6 +4765,8 @@ dotp_elective = {
 				has_job_title = job_spiritual
 				has_minor_title = title_councilmember_king #Generic advisors
 				has_minor_title = title_councilmember_emperor
+				has_minor_title = title_appointed_regent
+				has_minor_title = title_regent
 				} 
 			}
 		}
@@ -5548,7 +5593,7 @@ dotp_elective = {
 			}
 		}
 		additive_modifier = { #Shunned for being Greedy
-			value = -30
+			value = -20
 			localisation_key = tooltip_feudal_elector_vote_greedy_negative
 			NOT = { character = FROM } #Do not judge yourself.
 			OR = { 
@@ -6423,9 +6468,14 @@ dotp_elective = {
 		}
 	}
 	
-	#ROOT = Current Title holder, FROM = Candidate, FROMFROM = Title, FROMFROMFROM = Null
 	candidate_trigger = {
 		NOT = { character = FROM } #Not the current ruler.
+		FROM = { 
+			NOR = { 
+				trait = crusader_king 
+				trait = crusader_queen
+			} 
+		} 
 		FROM = { #Either the candidate is in the realm, or is landless, or the title is independent, or the realm of the title does NOT have protected inheritance.
 			OR = { 
 				any_liege = { 
@@ -6439,41 +6489,51 @@ dotp_elective = {
 					ROOT_FROMFROM = { has_law = crown_authority_4 } 
 				} 
 			} 
-		} 
+		}
 		FROM = {
-			religion = marxist # The revolution must go on
-			
-			OR = { #Candidate should not be a landless Courtier that is about to inherit a merchant republic
-				AND = {
+			OR = { #Candidate should not be a landless Courtier that is about to inherit a Theocracy or Republic
+				AND = { # And not already ruler of a republic, merchant republic, or theocracy
 					is_ruler = yes
 					is_landed = yes
+					is_republic = no
 					is_merchant_republic = no
+					is_theocracy = no
 				}
 				NOR = {
 					any_heir_title = {
+						is_republic = yes
+					}
+					any_heir_title = {
 						is_merchant_republic = yes
 					}
-				}
-			}
-			OR = { #If the title controls the religion, candidates must be of the same religion.
-				ROOT = { 
-					NOT = { 
-						controls_religion = yes
+					any_heir_title = {
+						is_theocracy = yes
 					}
 				}
-				religion = ROOT
+			}
+			
+			religion = marxist # Candidates must be Marxists. In future, adding liberation theology to this.
+			
+			OR = { # Candidate should either be on the Politburo, a direct vassal greater than a Baron, or a close relative of the ruler
+				AND = {
+					vassal_of = ROOT
+					OR = {
+						has_job_title = job_chancellor
+						has_job_title = job_marshal
+						has_job_title = job_treasurer
+						has_job_title = job_spymaster
+						has_job_title = job_spiritual
+						has_minor_title = title_councilmember_king #Generic advisors
+						has_minor_title = title_councilmember_emperor
+						has_minor_title = title_appointed_regent
+						has_minor_title = title_regent
+						higher_real_tier_than = BARON
+					}
+				}
+				
+				is_close_relative = ROOT
 			}
 			NOR = {
-				#mother = {		 # Uncommenting this condition provokes that a ruler's son is not a valid candidate if the mother is married to the ruler and a candidate
-				#	is_alive = yes
-				#	is_married = ROOT
-				#	parent_for_elective_succession_trigger = yes
-				#}
-				#father = {			# Same as above, for the father
-				#	is_alive = yes
-				#	is_married = ROOT
-				#	parent_for_elective_succession_trigger = yes
-				#}
 				trait = cat
 				trait = disinherited
 				trait = horse

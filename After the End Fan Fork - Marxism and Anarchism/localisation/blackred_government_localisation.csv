@@ -5,7 +5,7 @@ dotp_government_desc;In proletarian dictatorships, land and property are governe
 gov_dotp;Proletarian Dictatorship;;;;;;;;;x
 gov_dotp_rep;People’s Republic;;;;;;;;;x
 succ_dotp_elective;Politburo Elective;;;;;;;;;x
-succ_dotp_elective_desc;In a dictatorial realm, the Politburo convenes to select an appropriate successor from Marxists in the realm.;;;;;;;;;x
+succ_dotp_elective_desc;In a dictatorial realm, the Politburo convenes to select an appropriate successor from their members, the ruler’s relatives, or the heads of the regions that directly report to them..;;;;;;;;;x
 dotp_elective;Politburo Election;;;;;;;;;x
 communal_government;Communal;;;;;;;;;x
 communal_government_desc;In communal realms, land and property are owned collectively and represented by local delegates.;;;;;;;;;x 
