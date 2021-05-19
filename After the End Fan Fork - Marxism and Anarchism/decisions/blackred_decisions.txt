@@ -85,7 +85,7 @@ decisions = {
 				has_landed_title = e_nys
 				has_landed_title = e_dixie
 				has_landed_title = e_new_south
-				has_landed_title = e_california
+				has_landed_title = e_new_california
 			}
 		}
 		effect = {

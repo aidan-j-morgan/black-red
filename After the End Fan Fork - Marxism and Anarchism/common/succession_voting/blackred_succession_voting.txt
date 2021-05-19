@@ -203,10 +203,6 @@ communal_elective = {
 			higher_real_tier_than = KING
 			any_defacto_liege = { title = FROMFROM }
 		}
-		additive_modifier = { # Liege doesn't get a say
-			value = -100
-			is_liege_of = FROMFROM
-		}
 	}
 	candidate_vote_score = {
 		days = 0
